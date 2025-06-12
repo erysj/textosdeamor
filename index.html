@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina de Amor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <a href="index.html"></a>
+
+    <div class="heart-container">
+    <!-- 20 corações animados -->
+    <div class="heart" style="left: 5%; animation-delay: 0s;"></div>
+    <div class="heart" style="left: 10%; animation-delay: 2s;"></div>
+    <div class="heart" style="left: 15%; animation-delay: 4s;"></div>
+    <div class="heart" style="left: 20%; animation-delay: 1s;"></div>
+    <div class="heart" style="left: 25%; animation-delay: 3s;"></div>
+    <div class="heart" style="left: 30%; animation-delay: 2s;"></div>
+    <div class="heart" style="left: 35%; animation-delay: 5s;"></div>
+    <div class="heart" style="left: 40%; animation-delay: 1s;"></div>
+    <div class="heart" style="left: 45%; animation-delay: 3s;"></div>
+    <div class="heart" style="left: 50%; animation-delay: 0.5s;"></div>
+    <div class="heart" style="left: 55%; animation-delay: 2.5s;"></div>
+    <div class="heart" style="left: 60%; animation-delay: 4.5s;"></div>
+    <div class="heart" style="left: 65%; animation-delay: 1.5s;"></div>
+    <div class="heart" style="left: 70%; animation-delay: 3.5s;"></div>
+    <div class="heart" style="left: 75%; animation-delay: 0.2s;"></div>
+    <div class="heart" style="left: 80%; animation-delay: 2.2s;"></div>
+    <div class="heart" style="left: 85%; animation-delay: 4.2s;"></div>
+    <div class="heart" style="left: 90%; animation-delay: 1.2s;"></div>
+    <div class="heart" style="left: 95%; animation-delay: 3.2s;"></div>
+</div>
+
+
+    <div class="pagin">
+        <h1> Forever Together ❤️ </h1>
+        <h3> De Eryson para Júlia✍️ ..................................... </h3>
+        <p> De um programador meia boca 💻para a mulher mais linda e iteligente desse mundo 😍 </p>
+    </div>
+
+
+
+    <audio id="audioPlayer" style="display: none;"></audio>
+
+    <button id="botaoMusica1" onclick="playPlaylist()">
+        Aperte aqui🎵
+    </button>
+
+    <script>
+        const playlist = [
+            './musica1.mp3'
+        ];
+
+        let currentTrack = 0;
+        const audioPlayer = document.getElementById('audioPlayer');
+
+        function playPlaylist() {
+            currentTrack = 0;
+            audioPlayer.src = playlist[currentTrack];
+            audioPlayer.play();
+            audioPlayer.style.display = 'block';
+        }
+
+        audioPlayer.addEventListener('ended', () => {
+            currentTrack++;
+            if (currentTrack < playlist.length) {
+                audioPlayer.src = playlist[currentTrack];
+                audioPlayer.play();
+            }
+        });
+    </script>
+
+
+
+
+
+
+
+    <div class="imagens1">
+
+        <div class="texto1">
+            <p>Oi, amorzinho! 💖<br>Sou eu... o seu marido. 😊❤️<br>
+            Se você está lendo esta mensagem, é porque deu tudo certo —<br>
+            consegui fazer tudo direitinho!
+            É o que eu mais queria era fazer com que este dia<br>
+            fosse muito, muito especial para nós.Afinal, esse é 
+            o nosso segundo Dia dos Namorados juntos... 💑</p> <br>
+            
+        </div>
+        <div class="foto1">
+            <img src="image1.jpeg" alt="imagem 1">
+        </div>
+    </div>
+
+
+    <div class="imagens2">
+
+        <div class="texto2">
+            <p> 💞 Você é a minha vida 💞 Você é tudo para mim 😍 <br>
+            Você entrou na minha vida de um jeito que eu não sei explicar.  
+            O que era pra ser leve, parecia pesado.  
+            Eu não te entendia, você bagunçava a minha cabeça...  
+            Me deixava confuso, sem saber o que sentia por mim. <br>
+            Mas o tempo me mostrou que eu só precisava de uma coisa:  
+            te amar. Simples assim. 💜 Desculpa se, às vezes, eu sou meio chato...
+            faz parte de mim.<br> Mas saiba: em todas as minhas orações,  
+            você está sempre em primeiro lugar. 🙏✨ <br> Eu te amo Muito.❤️</p>
+        </div>
+        <div class="foto2">
+            <img src="image2.jpeg" alt="imagem 2">
+        </div>
+    </div>
+
+
+    <div class="imagens3">
+
+        <div class="texto3">
+            <p> O mundo fica mais bonito com a sua existencia,<br> 
+            só tenho a agradecer a papai do céu pela sua vida,<br> 
+            com você tudo fica mais bonito, 💓Eu amo você🥰<br> 
+            você deu cor ao meu mundo 🥰</p>
+        </div>
+        <div class="foto3">
+            <img src="image3.jpeg" alt="imagem 3">
+        </div>
+    </div>
+
+
+    <div class="imagens4">
+
+        <div class="texto4">
+            <p> Eu sei que não sou o amor da sua vida… sou o amor para a sua vida ❤️.
+                Fico triste quando penso nisso, porque talvez a 
+                minha visão sobre isso seja diferente — mas tudo bem 💔.
+                Mesmo daqui a cinco, dez ou até trinta anos… enquanto eu tiver vida, 
+                eu sempre vou amar você 💖✨.</p>
+        </div>
+        <div class="foto4">
+            <img src="image4.jpeg" alt="imagem 4">
+        </div>
+    </div>
+
+
+
+    <a href="https://erysj.github.io/muscas/" id="botaoMusica">Aperte aqui Meu 💓</a>
+
+
+    
+</body>
+</html>
