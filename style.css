@@ -1,31 +1,55 @@
-@media (max-width: 768px) {
+body {
+    background-color: #0e0007; /* fundo escuro total */
+    color: #f2f2f2;
+  }
 
   .pagin h1, .pagin h3, .pagin p {
     width: 90%;
-    font-size: 20px;
+    font-size: 22px; /* fonte aumentada */
     margin: 10px auto;
     left: auto;
+    margin-left: 5%;
     top: auto;
+    color: #f2c9ff;
+    text-align: center;
+    font-size: 30px;
   }
 
   #botaoMusica1,
   #botaoMusica {
-    width: 80%;
+    background-color: #0e0007;
+    color: white;
+    width: 8%;
+    height: 50px;
     margin: 20px auto;
     left: auto;
+    margin-left: 45%;
     transform: none;
+    font-size: 18px;
+    border-radius: 20px;
+    border: 2px solid rgb(240, 2, 113);
+    cursor: pointer;
   }
+
+  #botaoMusica {
+      width: 80px;
+      height: 50px;
+    }
 
   .imagens1 .texto1 p,
   .imagens2 .texto2 p,
   .imagens3 .texto3 p,
   .imagens4 .texto4 p {
-    width: 90%;
+    width: 45%;
     left: auto;
     top: auto;
     height: auto;
-    font-size: 18px;
+    font-family: 'Dancing Script', cursive;
+    font-size: 20px; /* fonte aumentada */
     margin: 10px auto;
+    background-color: #1e1e1e; /* fundo escuro */
+    color: #f2f2f2; /* texto claro */
+    padding: 15px;
   }
 
   .imagens1 img,
@@ -35,8 +59,9 @@
     position: relative;
     left: auto;
     top: auto;
-    max-width: 90%;
+    max-width: 10%; /* imagens menores */
     margin: 10px auto;
+    display: block;
   }
 
   .imagens1,
@@ -49,9 +74,11 @@
   }
 
   img {
-    max-width: 100%;
+    max-width: 40%;
     height: auto;
     border-radius: 20px;
   }
 
-}
+
+
+@media (max-width: 768px) { }
